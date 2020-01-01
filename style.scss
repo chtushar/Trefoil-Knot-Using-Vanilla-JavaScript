@@ -12,6 +12,7 @@ div{
 body{
   height: 100vh;
   perspective: 15em;
+  background: linear-gradient(to right, #396afc, #2948ff);
 }
 .container{
   width: 400px;
@@ -34,7 +35,7 @@ body{
   height: $d;
   border-radius: 50%;
   //background-color: lightcoral;
-  background: linear-gradient(to right, #f953c6, #b91d73);
+  background: linear-gradient(to right, #d9a7c7, #fffcdc);
 }
 
 .form{
@@ -52,4 +53,9 @@ body{
 
     transform: translate(-50%, -50%) rotateY(360deg);
   }
+}
+
+label{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

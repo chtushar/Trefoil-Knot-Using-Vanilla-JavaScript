@@ -15,6 +15,8 @@ body {
   height: 100vh;
   -webkit-perspective: 15em;
           perspective: 15em;
+  background: -webkit-gradient(linear, left top, right top, from(#396afc), to(#2948ff));
+  background: linear-gradient(to right, #396afc, #2948ff);
 }
 
 .container {
@@ -40,8 +42,8 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, right top, from(#f953c6), to(#b91d73));
-  background: linear-gradient(to right, #f953c6, #b91d73);
+  background: -webkit-gradient(linear, left top, right top, from(#d9a7c7), to(#fffcdc));
+  background: linear-gradient(to right, #d9a7c7, #fffcdc);
 }
 
 .form {
@@ -74,5 +76,10 @@ body {
     -webkit-transform: translate(-50%, -50%) rotateY(360deg);
             transform: translate(-50%, -50%) rotateY(360deg);
   }
+}
+
+label {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

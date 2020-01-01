@@ -3,6 +3,8 @@ const wrap = container.querySelector('.wrapper');
 const number = 60;
 const radius = 50;
 const pi = Math.PI;
+const numSlider = document.querySelector('#number');
+const radSlider = document.querySelector('#radius');
 
 function toRadians(a) {
   return (a*pi/180);
@@ -14,7 +16,7 @@ function createKnot(radius, number){
 
   let baseAngle = 360/number;
   baseAngle = toRadians(baseAngle);
-
+  wrap.innerHTML = ''
 
   for (let i = 0; i < number; i++) {
     let currentAngle = baseAngle*i;
@@ -34,3 +36,8 @@ function createKnot(radius, number){
 
 
 createKnot(50,60);
+
+function change() {
+
+  createKnot(radSlider.value, numSlider.value);
+}
